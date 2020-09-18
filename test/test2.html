@@ -3,156 +3,134 @@
 <head>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-        .my-container {
-            background-color:  green;            
-            height: 80px;
-            align-items: center; 
-        }
-        .my-item {
+        .my-menu {
             display: flex;
-            font-weight: bold;          
-            font-size: 25px;
-        
-             
-                              
+            background-color: green;
+            height: 80px;
+            align-items: center;;
         }
-        .sub-item { 
-            padding: 25px 15px;          
-            color: white;                     
+        .menu-item {
+            padding: 25px 10px;
+            font-size: 25px;
+            color: white; 
+            font-weight: bold;          
         }
         .dummy {
             flex: 1;
         }
-        .sub-item:hover {
+        .menu-item:hover {
+            color: black;
+            background-color: white;           
+        }
+        
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+        .menu-item {
+            position: relative;
+        }
+        .sub-menu {
+            position: absolute;
+            display: none;
+            top: 80px;
+            left: 0px;      
+            padding: 10px;
             background-color: white;
-            color: black           
+            border-top: 5px solid green;
         }
         .main-container {
             display: flex;
             margin-top: 30px;
         }
-
-        .main-container> div {
-            border: 5px solid black;          
+        .main-container > div {
+            border: 5px solid black;
         }
-        .side-menu {
+        .side-menu { 
             width: 200px;
         }
         .main-content {
             flex: 1;
         }
-        .sub-container {
+        .ad-container {
             width: 200px;
         }
-        my-item:hover .sub-item {
-            display: block;
-            
-        }
-        
-    </style>
+
+
+            </style>
 </head>
 <body>
-    <div>
-        <div class="my-container">
-            <div class="my-item">
-                <div class="sub-item">
-                    TUTORIALS <i class="fas fa-caret-down"></i>
-                    <div class="sub-item">Lorem.</div>
-                    <div class="sub-item">Pariatur!</div>
-                    <div class="sub-item">Non.</div>
-                    <div class="sub-item">Harum!</div>
-                    <div class="sub-item">Culpa.</div>
-                </div>                    
-                <div class="sub-item">REFERENCES <i class="fas fa-caret-down"></i></div>
-                <div class="sub-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
-                <div class="sub-item">EXERCIES <i class="fas fa-caret-down"></i></div>
-                <div class="dummy"></div>
-                <div class="sub-item"><i class="fas fa-adjust"></i></div>
-                <div class="sub-item"><i class="fas fa-globe-americas"></i></div>
-                <div class="sub-item"><i class="fas fa-search"></i></div>
+    <div class="my-menu">
+        <div class="menu-item">
+            TUTORIALS <i class="fas fa-caret-down"></i>
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Quo.</div>
+                <div class="sub-item">Dolore.</div>
+                <div class="sub-item">Deleniti!</div>
+                <div class="sub-item">Voluptates.</div>
             </div>
         </div>
-    </div>
-    <div class="main-container">
-        <div class="side-menu">
-            <div class="side-item">
-                <div>Lorem.</div>
-                <div>Aliquam.</div>
-                <div>Assumenda?</div>
-                <div>Quos.</div>
-                <div>Ducimus.</div>
-                <div>Quos.</div>
-                <div>Consectetur.</div>
-                <div>Ducimus!</div>
-                <div>Reprehenderit?</div>
-                <div>Architecto!</div>
-                <div>Officiis!</div>
-                <div>Commodi!</div>
-                <div>Blanditiis.</div>
-                <div>Pariatur!</div>
-                <div>Impedit?</div>
-                <div>Reprehenderit!</div>
-                <div>Expedita!</div>
-                <div>Modi.</div>
-                <div>Atque!</div>
-                <div>Dignissimos!</div>
-                <div>Maiores?</div>
-                <div>Facilis.</div>
-                <div>Soluta?</div>
-                <div>Quibusdam.</div>
-                <div>Atque!</div>
-                <div>Doloremque.</div>
-                <div>Recusandae.</div>
-                <div>Nostrum.</div>
-                <div>Eligendi?</div>
-                <div>Qui?</div>
-            </div>
+        <div class="menu-item">
+        REFERENCES <i class="fas fa-caret-down"></i>
         </div>
-        <div class="main-content">
-            <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nemo eum fuga quasi ratione cupiditate? Hic, dicta? Dolores doloremque vel ipsa aliquam atque adipisci explicabo sapiente, perspiciatis ratione unde numquam!</p>
-            <h1>Earum, est tempora!</h1>
-            <p>Nobis assumenda consequuntur ipsa exercitationem fuga quae iure quaerat quos eos ducimus, nemo sint cumque voluptas debitis, voluptatum corrupti. Facilis, sint earum iste obcaecati est qui odio alias quo iusto.</p>
-            <h1>Molestiae, assumenda adipisci.</h1>
-            <p>Assumenda, sed repellendus voluptates ipsam voluptate officiis tempore sunt eveniet corporis sapiente doloribus esse nostrum, nemo consequuntur vel commodi earum autem, praesentium eos unde veritatis iste labore. Saepe, necessitatibus ea.</p>
-            <h1>Ipsa, iusto fuga!</h1>
-            <p>Molestias ullam quos neque ipsum dolorem sapiente dolorum quis enim molestiae vel adipisci, sequi ut quia cumque aspernatur tempore eius quod. Dolores ipsum quis voluptatibus omnis facere possimus perspiciatis quos.</p>
-            <h1>Repudiandae, nemo laboriosam.</h1>
-            <p>Perspiciatis impedit, excepturi voluptatum id ipsam laborum reprehenderit exercitationem sed quasi, numquam, ad porro at provident fugit? Aspernatur at assumenda voluptate temporibus ex? Officiis necessitatibus velit itaque repudiandae quod possimus.</p>
-            <h1>Excepturi, nobis optio.</h1>
-            <p>Illo soluta, earum voluptatem molestiae explicabo nemo sequi reiciendis odio quo iure dolores minus asperiores, dignissimos ratione harum minima eos? Accusamus illum at autem asperiores natus laudantium corrupti minus! Aspernatur.</p>
-            <h1>Vitae, deleniti et!</h1>
-            <p>Error repellat vel voluptates eum fugiat nesciunt, alias suscipit omnis in voluptatum unde id similique deleniti ipsam repellendus praesentium magnam culpa labore! Natus non libero eos mollitia eveniet. Suscipit, fugit.</p>
-            <h1>Ea, eveniet sapiente.</h1>
-            <p>Est ipsam alias eius exercitationem natus quas, amet tempora magni voluptate architecto perferendis accusantium quam neque laboriosam reprehenderit? Ducimus, hic maxime. Totam harum reiciendis dignissimos, molestiae minima quae saepe modi?</p>
-            <h1>Dignissimos, labore repellendus.</h1>
-            <p>Accusantium, ipsum rerum, omnis, accusamus fuga quisquam expedita sunt explicabo voluptas facilis suscipit similique dolor magni laboriosam obcaecati eum. Eos voluptate inventore, quia vitae voluptatibus quo tempora praesentium iste velit.</p>
-            <h1>Perspiciatis, magni cum.</h1>
-            <p>Ea autem ut obcaecati, accusamus saepe quam magni, inventore, repellendus debitis ab rerum? Consequatur excepturi facere debitis qui perspiciatis vero tempora inventore labore voluptas quod temporibus nam, quis nulla? Quia!</p>
-            <h1>Animi, eaque dolores.</h1>
-            <p>Deleniti optio unde veritatis vero quasi necessitatibus asperiores. Nemo, aliquam animi assumenda at optio delectus quibusdam reprehenderit in eaque quo, fugit non! Expedita animi repellat odit assumenda, consequuntur id sapiente?</p>
-            <h1>Obcaecati, a nisi.</h1>
-            <p>Harum aliquam odio aut ducimus quae necessitatibus assumenda sit a accusantium beatae tempora perspiciatis error sequi, placeat nisi pariatur consequatur dolorem, explicabo maiores magnam obcaecati rerum ab! Nam, corrupti inventore.</p>
-            <h1>Amet, cumque at!</h1>
-            <p>Dolorem exercitationem aliquid magni atque quae voluptatibus vero qui tempora eligendi? Aut veritatis illum molestiae ad illo dolorem quos reiciendis repellat non, quisquam eius sequi eos, rerum ducimus, at odio.</p>
-            <h1>Expedita, tenetur qui.</h1>
-            <p>Explicabo natus cum ratione consequatur asperiores dolor eveniet necessitatibus tenetur corrupti quasi! Unde quo aperiam nulla esse odio quibusdam nesciunt nam, voluptas corrupti amet mollitia ad beatae animi alias minima.</p>
-            <h1>Odio, deserunt labore?</h1>
-            <p>Ut voluptatem fuga similique dolorem temporibus maiores eligendi laboriosam officia voluptatum repellat molestias eveniet magnam nesciunt ducimus, recusandae excepturi maxime, doloribus itaque alias facere cum? Vitae eaque quae porro saepe.</p>
-            <h1>Delectus, sequi officiis?</h1>
-            <p>Voluptates nihil dolorum asperiores nam, commodi ab earum nobis soluta? Temporibus dignissimos libero neque et perspiciatis magni reprehenderit porro modi nobis odio excepturi nemo ad rem numquam, vel voluptatem sunt.</p>
-            <h1>Maxime, repellendus. Ratione.</h1>
-            <p>Sed eos necessitatibus fugiat cum eligendi, vero omnis commodi sit cumque veritatis tempora maxime quis nisi aut aspernatur eius quae quasi repellendus corporis harum! Doloremque est dolor modi? Quia, ullam!</p>
-            <h1>Soluta, quod consectetur.</h1>
-            <p>Maxime laboriosam eligendi modi temporibus optio, error odit molestiae, dolore voluptatibus sequi quos deleniti dicta natus earum nemo perferendis hic dolor dolorum. Voluptate asperiores, perspiciatis iure sapiente officiis corrupti praesentium!</p>
-            <h1>Autem, quis quas.</h1>
-            <p>Ipsa saepe, numquam a hic aut quae officiis? Modi praesentium facilis odit debitis porro, nisi quia maiores itaque, maxime aspernatur harum. Maxime, autem? Unde in sequi corrupti sit ex doloribus.</p>
-            <h1>Dolores, excepturi temporibus?</h1>
-            <p>Facere quibusdam reprehenderit perferendis eius doloremque ut omnis velit tempore, esse obcaecati, voluptas repellat molestiae in quo incidunt nisi iste voluptates temporibus! Totam voluptatum distinctio quo enim quaerat repellat voluptatem.</p>
+        </div>
 
         </div>
-            
-        <div class="sub-container"></div>
+        <div class="menu-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">EXERCIES <i class="fas fa-caret-down"></i></div>
+        <div class="dummy"></div>
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-container">
+        <div class="side-menu">
+            <div>Lorem.</div>
+            <div>Quae!</div>
+            <div>Dicta!</div>
+            <div>In!</div>
+            <div>Sunt.</div>
+            <div>Quasi!</div>
+            <div>Iste.</div>
+            <div>Vero?</div>
+            <div>Quidem.</div>
+            <div>Quaerat?</div>
+            <div>Esse!</div>
+            <div>Illum.</div>
+            <div>Delectus.</div>
+            <div>Dolor.</div>
+            <div>Quibusdam.</div>
+            <div>Ducimus?</div>
+            <div>Commodi!</div>
+            <div>Eveniet.</div>
+            <div>Error!</div>
+            <div>Beatae?</div>
+        </div>
+    
+    <div class="main-content">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, adipisci! Non unde odit similique debitis provident dolores voluptas ex nam, modi a, dolor vel ab, harum dolorem earum laudantium at?</p>
+        <h1>Nulla, quod sapiente?</h1>
+        <p>Possimus aperiam, eveniet incidunt laudantium minus animi molestias explicabo quae aspernatur consequuntur distinctio unde temporibus, voluptatum alias eum quaerat minima modi molestiae voluptas veritatis accusamus impedit cupiditate odio! Possimus, temporibus?</p>
+        <h1>Consectetur, nemo illum.</h1>
+        <p>Doloribus earum quam molestiae quia ratione pariatur impedit sint iste harum aut! Eaque amet pariatur aut necessitatibus, voluptatum natus sequi voluptas. Placeat, illo? Hic, beatae ab. Rerum omnis vero a.</p>
+        <h1>Quae, ab natus.</h1>
+        <p>Saepe quo modi beatae facilis, perferendis repudiandae illum magnam reprehenderit similique quas quam. Modi ex eveniet aperiam maxime perspiciatis nam numquam vel incidunt. Cum commodi porro molestias dolorum beatae itaque!</p>
+        <h1>Nihil, minima asperiores!</h1>
+        <p>Molestias natus iste impedit labore, explicabo numquam ipsum sapiente, mollitia doloribus sequi rem deserunt fugiat perspiciatis quas iusto ipsa hic pariatur obcaecati? Deserunt vitae illo temporibus ipsam placeat officiis facere.</p>
+        <h1>Officiis, voluptate unde?</h1>
+        <p>Aliquam quaerat temporibus adipisci exercitationem esse magnam placeat eveniet saepe quas, est, porro eum aperiam mollitia reprehenderit quo. Labore, excepturi quod ad ea omnis itaque corrupti nulla eveniet rem sapiente?</p>
+        <h1>Corrupti, quas sit.</h1>
+        <p>Magni amet dolorem iste eos iure voluptas, delectus natus doloribus perspiciatis animi esse enim accusantium ab aliquam tempora rem expedita unde exercitationem rerum adipisci excepturi facilis? Pariatur qui error doloremque.</p>
+        <h1>Quae, dicta animi.</h1>
+        <p>Sed praesentium sit iure, earum aspernatur culpa eligendi suscipit officia molestiae? Laborum error ex reprehenderit perspiciatis id odio labore quasi quo iure. Cupiditate dignissimos culpa odit eligendi vel molestiae at?</p>
+        <h1>Iusto, assumenda cum?</h1>
+        <p>Dignissimos, harum cum eum, esse consectetur quos repudiandae fuga hic, eligendi nostrum suscipit! Inventore repudiandae veniam accusantium, consequuntur harum numquam rem dolore natus architecto incidunt exercitationem totam blanditiis. Quo, molestias.</p>
+        <h1>Asperiores, consequuntur quas?</h1>
+        <p>Veniam minima autem recusandae culpa consectetur deserunt laborum itaque libero, saepe inventore sint blanditiis aliquid facilis accusamus impedit atque aut totam. Ea, quia. Deserunt quo at numquam neque? Consequuntur, culpa?</p>
+    </div>
+    <div class="ad-container"></div>
     </div>
 </body>
 </html>
