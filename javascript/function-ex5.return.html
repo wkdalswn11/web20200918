@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var a = "3";
+        var b = Number(a);
+        //Number(a) 는 스트링형 "3"을 정수로바꿔주는 함수
+        console.log(b);
+
+        function double(num) {
+            var num2 = num * 2;
+            return num2; // 1. 함수 종료
+
+            console.log("함수 실행중");
+            // 앞에 return이 있기때문에 함수 실행중은 작동X     
+        }
+
+        var c = 9;
+        var d = double(c);
+
+        console.log(d);
+    </script>
+</body>
+</html>

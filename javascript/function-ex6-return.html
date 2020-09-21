@@ -15,69 +15,65 @@
 
     <input type="text" id="input3"> <br>
     <input type="text" id="input4"> <br>
-    <button onclick="displaySub()"><i class="fas fa-minus"></i></button>
+    <button onclick="displayMuti()"><i class="fas fa-times"></i></button>
     <p id="result2"></p>
 
     <hr>
 
     <input type="text" id="input5"> <br>
     <input type="text" id="input6"> <br>
-    <button onclick="displayMult()"><i class="fas fa-times"></i></button>
+    <button onclick="displaysub()"><i class="fas fa-minus"></i></button>
     <p id="result3"></p>
-
+    
     <hr>
 
-    <input type="text" id="input7"> <br> 
+    <input type="text" id="input7"> <br>
     <input type="text" id="input8"> <br>
     <button onclick="displayDivide()"><i class="fas fa-divide"></i></button>
     <p id="result4"></p>
+
     <script>
-      function displayAdd() {
+        function substract(a ,b) {
+            return a - b;
+        }
+        function displaysub() {
+            var n1 = document.getElementById("input5").value;
+            var n2 = document.getElementById("input6").value;
+
+            var result = substract(n1, n2);
+            document.getElementById("result3").innerHTML = result;
+        }
+        function add(a, b) {
+            return a + b;
+        }
+        function displayAdd() {
             var n1 = document.getElementById("input1").value;
             var n2 = document.getElementById("input2").value;
 
             var result = add(Number(n1), Number(n2));
             document.getElementById("result1").innerHTML = result;
         }
-        function add(a, b) {
-            return a + b; 
-        }
-
-        function displaySub() {
-
+        function displayMuti() {
             var n1 = document.getElementById("input3").value;
             var n2 = document.getElementById("input4").value;
 
-            var result = substract(n1, n2);
+            var result = multply (n1, n2);
             document.getElementById("result2").innerHTML = result;
         }
-        function substract(a, b){
-            return a - b;
-        }
-        function displayMult() {
-
-            var n1 = document.getElementById("input5").value;
-            var n2 = document.getElementById("input6").value;
-
-            var result = multply(n1, n2);
-            document.getElementById("result3").innerHTML = result;
-        }
-        function multply(a, b) {
+        function multply (a, b) {
             return a * b;
         }
         function displayDivide() {
-
             var n1 = document.getElementById("input7").value;
             var n2 = document.getElementById("input8").value;
 
-            var result = Divide(n1, n2)
+            var result = Divide(n1, n2);
             document.getElementById("result4").innerHTML = result;
         }
-        function Divide(a, b){
+        function Divide(a, b) {
             return a / b;
         }
+        
     </script>
 </body>
-    
-
 </html>
