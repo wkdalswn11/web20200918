@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .A {
+            display: flex;
+        }
+        .number {
+            
+            background-color: skyblue;
+            color: red;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font: 50px bold;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="A">
+     <button onclick="lotto()">로또!!</button>
+        
+            <div class="number" id="num1"></div>
+            <div class="number" id="num2"></div>
+            <div class="number" id="num3"></div>
+            <div class="number" id="num4"></div>
+            <div class="number" id="num5"></div>
+            <div class="number" id="num6"></div>
+        
+    </div>
+    
+    <script>
+        function getElementById() {
+            return Math.floor(Math.random()*45) + 1;
+        }
+        function lotto() {
+            document.getElementById('num1').innerHTML = getElementById();
+            document.getElementById('num2').innerHTML = getElementById();
+            document.getElementById('num3').innerHTML = getElementById();
+            document.getElementById('num4').innerHTML = getElementById();
+            document.getElementById('num5').innerHTML = getElementById();
+            document.getElementById('num6').innerHTML = getElementById();
+        }
+    </script>
+</body>
+</html>

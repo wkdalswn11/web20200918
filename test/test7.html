@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+   반지름 : <input type="number" id="input1"> <br>
+   <button onclick="둘레()">원의 둘레</button>
+   <button onclick="넓이()">원의 넓이</button>
+   <p id="result"></p>
+    <script>
+        function 둘레() {
+            var r = document.getElementById('input1').value;
+            r = Number(r);
+            var len = r * 2 * Math.PI;
+            document.getElementById('result').innerHTML = len;
+        }
+        function 넓이() {
+            var r = document.getElementById('input1').value;
+            r = Number(r);
+            var len = r * r * Math.PI;
+            document.getElementById('result').innerHTML = len;
+        }
+        
+    </script>
+</body>
+</html>
