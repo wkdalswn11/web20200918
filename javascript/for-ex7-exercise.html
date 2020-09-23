@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        console.log("----문제1-----");
+        for (var i = 0; i < 5; i++) {
+            var txt= "";
+            for (var j = 0; j <= i; j++) {
+            txt += "*";
+            }
+            console.log(txt);
+        }
+        console.log("--------문제2 -------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 4; j++) {
+                if (i <= j) { 
+                    txt += "*";
+                }
+            }       
+             console.log(txt);
+        }
+        console.log("---------문제3----------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 5; j++) {
+                if (i < j) { 
+                    txt += "#";
+                } else {
+                    txt += "*"
+                }
+            }       
+             console.log(txt);
+        }
+        console.log("------------문제4-----------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 5; j++) {
+                if (i < j) { 
+                    txt += "*";
+                } else {
+                    txt += "#"
+                }
+            }       
+             console.log(txt);
+        }
+        console.log("---------문제5--------------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 5; j++) {
+                if (i < j) { 
+                    txt += "*";
+                } else {
+                    txt += " ";
+                }
+            }       
+             console.log(txt);
+        }
+        console.log("---------문제6--------------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 5; j++) {
+                if (i >= j) { 
+                    txt += " ";
+                } else {
+                    txt += "*";
+                }
+                
+            }       
+             console.log(txt);
+        }
+        console.log("---------문제7--------------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= 5; j++) {
+                if (i+j <= 4) { 
+                    txt += " ";
+                } else {
+                    txt += "*";
+                }
+                
+            }       
+             console.log(txt);
+        }
+        console.log("-------------문제8---------------");
+        for (var i = 0; i < 5; i++) {
+            var txt= "";
+            for (var j = 0; j <= 5; j++) {
+            txt += (i,j);
+            }
+            console.log(txt);
+        }
+        console.log("--------------문제9-----------");
+        for (var i = 0; i < 5; i++) {
+            var txt= "";
+            for (var j = i; j <= i+4; j++) {
+                txt += j;
+            }
+            console.log(txt);
+        }
+        console.log("--------------문제10----------");
+            for (var i = 0; i < 5; i++) {
+                var txt= "";
+                for (var j = 0; j <= i; j++) {
+                    txt += j;
+                }
+                console.log(txt);
+            }
+            
+    </script>
+</body>
+</html>
