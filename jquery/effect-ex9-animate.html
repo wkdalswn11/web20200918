@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .mydiv {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    width: "700px", 
+                    height: "500px",
+                    fontSize: "100px",
+                    left: "100px",
+                    
+                }, 3000);
+            });
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    bottom : "1500px"
+                    
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="mydiv">잡 생각</div>
+</body>
+</html>
