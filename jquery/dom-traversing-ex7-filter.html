@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").first().css("border", "5px solid green");
+            //first는 첫번째 div만 변동
+            $("div").last().css("border", "5px solid red");
+            //last 는 마지막 div만 변동
+
+            $("div").eq(0).css("padding", "5px");
+            //eq는 순번을 정할수있음 0번부터시작함
+            $("div").eq(1).css("padding", "7px");
+            $("div").eq(2).css("padding", "9px");
+            $("div").eq(3).css("padding", "11px");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laboriosam iusto saepe harum nobis amet qui cupiditate asperiores porro mollitia tenetur ab excepturi, in nisi ratione quasi facilis nostrum! Eaque!</div>
+        </div>
+    </div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit consequatur aliquam nisi! Exercitationem harum deserunt delectus accusantium perferendis assumenda doloremque, doloribus blanditiis reprehenderit tenetur. Rerum ullam vero doloremque consequatur accusantium?</div>
+</body>
+</html>

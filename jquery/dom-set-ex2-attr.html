@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            // $("#link1").attr("href", "https://www.google.com");
+
+            $("#input1").keyup(function () {
+               
+                $("#link1").attr("href", $(this).val());
+            });
+           
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <br>
+    <a href="" id="link1" target="_blank">custom</a>
+</body>
+</html>
